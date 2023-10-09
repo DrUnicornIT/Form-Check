@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style_submit.css" />
+    <link rel="stylesheet" href="style_submit.css" />
+    <title>Info -  Form </title> 
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="text" id="Date of Birth" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="Email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" id="Mobile Number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select id="Gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>School</label>
+                            <input type="text" id="School" placeholder="Enter your School" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="Deoon" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Describe</span>
+
+                    <div class="fields">
+                        <div class="input-field-big">
+                            <label>Describe</label>
+                            <input type="text" id="Describe" placeholder="Please describe yourself" required>
+                        </div>
+                    </div>
+                </div> 
+
+                <section>
+                    <button class="show-modal" id="Submit">Submit</button>
+                    <span class="overlay"></span>
+              
+                    <div class="modal-box">
+                      <i class="fa-regular fa-circle-check"></i>
+                      <h2>Completed</h2>
+                      <h3>You have sucessfully uploaded your profile.</h3>
+              
+                      <div class="buttons">
+                        <button class="close-btn">Ok, Close</button>
+                        <button id="Move" >Open Profile</button></a>
+                        <script  src="script.js"></script>
+
+                      </div>
+                    </div>
+                </section>
+                <script>
+                    const section = document.querySelector("section"),
+                      overlay = document.querySelector(".overlay"),
+                      showBtn = document.querySelector(".show-modal"),
+                      closeBtn = document.querySelector(".close-btn");
+              
+                    showBtn.addEventListener("click", () => section.classList.add("active"));
+                    
+                    overlay.addEventListener("click", () =>
+                      section.classList.remove("active")
+                    );
+              
+                    closeBtn.addEventListener("click", () =>
+                      section.classList.remove("active")
+                    );
+                </script>
+
+
+            </div>
+
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
