@@ -6,8 +6,8 @@ document.getElementById("Submit").onclick = function() {
     var email=document.getElementById("Email").value;
     var phone=document.getElementById("Mobile Number").value;
     var gen=document.getElementById("Gender").value;
-    var school=document.getElementById("school").value;
-    var des=document.getElementById("describe").value;
+    var school=document.getElementById("School").value;
+    var des=document.getElementById("Describe").value;
 
 
     localStorage.setItem("fullname", name);
