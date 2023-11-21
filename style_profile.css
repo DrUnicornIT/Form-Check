@@ -6,8 +6,36 @@
 .img-row {
   display:inline
 }
-.file-upload {
-    display:inline
+input[type="file"] {
+  display: none;
+}
+.file-upload_1 {
+    display:inline;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.file-upload_2 {
+  display:inline;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.file-upload_3 {
+  display:inline;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+.file-upload_4 {
+  display:inline;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }
 .img-row{
   position: absolute;
